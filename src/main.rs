@@ -10,7 +10,7 @@ fn main() {
     }
     let ip_str;
     let b: Vec<&str> = _args[1].split(":").collect();
-    let b: Vec<&str> = b[0].split(":").collect();
+    let b: Vec<&str> = b[0].split(",").collect();
     ip_str = b[0];
     let ip_addr;
     if let Ok(_a) = ip_str.parse::<Ipv4Addr>() {
